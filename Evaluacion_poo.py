@@ -60,6 +60,13 @@ cabaña = Alojamiento(
     2
 )
 
+#Hacemos otro objeto de prueba
+tippy= Alojamiento(
+    "Tippy Norte",
+    "Tippy",
+    800,
+    2
+)
 
 # Completa las instrucciones necesarias para:
 # 1. Mostrar la información de la casa.
@@ -84,12 +91,19 @@ print(departamento.mostrar_info())
 #Mostramos el precio x persona
 print(departamento.precio_por_persona())
 
-#Mostramos info departamento
+#Mostramos info cabaña
 print("\nLa informacion de la cabaña es: ")
 print(cabaña.mostrar_info())
 
 #Mostramos el precio x persona
 print(cabaña.precio_por_persona())
+
+#Mostramos info tippy
+print("\nLa informacion del tippy es: ")
+print(tippy.mostrar_info())
+
+#Mostramos el precio x persona
+print(tippy.precio_por_persona())
 
 
 
