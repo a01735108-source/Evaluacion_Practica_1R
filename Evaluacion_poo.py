@@ -71,9 +71,26 @@ cabaña = Alojamiento(
 #Ya establecimos los objetos arriba (Casa y Departamento)
 
 #Damos mensaje a usuario y mostramos info casa
-print("La informacion del alojamiento es: ")
+print("\nLa informacion de la casa es: ")
 print(casa.mostrar_info())
 
 #Mostramos el precio x persona 
 print(casa.precio_por_persona())
+
+#Mostramos info departamento
+print("\nLa informacion del departamento es: ")
+print(departamento.mostrar_info())
+
+#Mostramos el precio x persona
+print(departamento.precio_por_persona())
+
+#Mostramos info departamento
+print("\nLa informacion de la cabaña es: ")
+print(cabaña.mostrar_info())
+
+#Mostramos el precio x persona
+print(cabaña.precio_por_persona())
+
+
+
 
