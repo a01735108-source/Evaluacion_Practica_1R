@@ -52,6 +52,14 @@ departamento = Alojamiento(
     4
 )
 
+#Inicializamos Objeto 3 de prueba
+cabaña = Alojamiento(
+    "Cabaña Amaranto",
+    "Cabaña",
+    1150,
+    2
+)
+
 
 # Completa las instrucciones necesarias para:
 # 1. Mostrar la información de la casa.
@@ -61,6 +69,11 @@ departamento = Alojamiento(
 
 ##MAIN CODE##
 #Ya establecimos los objetos arriba (Casa y Departamento)
+
+#Damos mensaje a usuario y mostramos info casa
+print("La informacion del alojamiento es: ")
 print(casa.mostrar_info())
 
+#Mostramos el precio x persona 
+print(casa.precio_por_persona())
 
