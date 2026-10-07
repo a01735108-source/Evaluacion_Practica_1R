@@ -6,37 +6,36 @@ class Alojamiento:
         self.precio = precio
         self.capacidad = capacidad
 
+### INSTRUCCIONES RIGO ###
+    ### Reglas (léelas con atención, no son solo "rellenar")  
+    ### 1. mostrar_info()
+    ### Debe devolver (no imprimir) una cadena de texto con la información
+    ### del alojamiento, en un formato legible y consistente.
+    ### El precio debe verse como moneda y la capacidad como número de personas.
+
+ #Generamos una funcion para mostrar la informacion del alojamiento con formato
     def mostrar_info(self):
-        # COMPLETAR
-        #pass>> era una opcion cuando la def esta vacia y queremos que corra**
-        print('ooooo')
         return f"Alojamiento: {self.nombre}\nTipo: {self.tipo}\nPrecio: ${self.precio:.2f}\nCapacidad: {self.capacidad} personas"
 
-    # Reglas (léelas con atención, no son solo "rellenar")
-    # 1. mostrar_info()
 
-    # Debe devolver (no imprimir) una cadena de texto con la información
-    # del alojamiento, en un formato legible y consistente.
-    # El precio debe verse como moneda y la capacidad como número de personas.
-
+###INSTRUCCIONES RIGO###    
+    ### Debe devolver el precio que corresponde pagar por persona.
+    ### Si precio o capacidad no son válidos (capacidad o precio <= 0), 
+    ### no debe lanzar error: debe devolver None.
+    ### El resultado debe estar redondeado a 2 decimales.
+   
+#Generamos una funcion para saber cual es el precio x persona del alojamiento
     def precio_por_persona(self):
         # COMPLETAR
-        pass
 
         if self.precio <= 0 or self.capacidad <= 0:
             print ("None")
 
-        else:
-            return round(self.precio / self.capacidad, 2)
+        return round(self.precio / self.capacidad, 2)
 
-    # 2. precio_por_persona()
+    
 
-    # Debe devolver el precio que corresponde pagar por persona.
-    # Si precio o capacidad no son válidos (capacidad o precio <= 0), 
-    # no debe lanzar error: debe devolver None.
-    # El resultado debe estar redondeado a 2 decimales.
-
-
+###INICIALIZAMOS LOS OBJETOS/ ALOJAMIENTOS QUE VAMOS A UTILIZAR##
 # Objeto 1
 casa = Alojamiento(
     "Casa Centro",
@@ -61,11 +60,7 @@ departamento = Alojamiento(
 # 4. Mostrar el precio por persona del departamento.
 
 ##MAIN CODE##
-# Creamos un objeto de la clase ReproductorMusica
+#Ya establecimos los objetos arriba (Casa y Departamento)
+print(casa.mostrar_info())
 
-
-# Encendemos el reproductor
-print("Encendiendo el reproductor...")
-casa.mostrar_info()
-casa.precio_por_persona()
 
