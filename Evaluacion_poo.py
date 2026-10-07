@@ -8,7 +8,9 @@ class Alojamiento:
 
     def mostrar_info(self):
         # COMPLETAR
-        pass
+        #pass>> era una opcion cuando la def esta vacia y queremos que corra**
+        print('ooooo')
+        return f"Alojamiento: {self.nombre}\nTipo: {self.tipo}\nPrecio: ${self.precio:.2f}\nCapacidad: {self.capacidad} personas"
 
     # Reglas (léelas con atención, no son solo "rellenar")
     # 1. mostrar_info()
@@ -20,6 +22,12 @@ class Alojamiento:
     def precio_por_persona(self):
         # COMPLETAR
         pass
+
+        if self.precio <= 0 or self.capacidad <= 0:
+            print ("None")
+
+        else:
+            return round(self.precio / self.capacidad, 2)
 
     # 2. precio_por_persona()
 
@@ -51,3 +59,13 @@ departamento = Alojamiento(
 # 2. Mostrar el precio por persona de la casa.
 # 3. Mostrar la información del departamento.
 # 4. Mostrar el precio por persona del departamento.
+
+##MAIN CODE##
+# Creamos un objeto de la clase ReproductorMusica
+
+
+# Encendemos el reproductor
+print("Encendiendo el reproductor...")
+casa.mostrar_info()
+casa.precio_por_persona()
+
